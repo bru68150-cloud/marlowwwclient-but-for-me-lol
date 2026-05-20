@@ -1,3 +1,4 @@
+private float animation=0f
 package com.eclipseware.imnotcheatingyouare.client.clickgui;
 
 import com.eclipseware.imnotcheatingyouare.client.ImnotcheatingyouareClient;
@@ -54,7 +55,7 @@ public class Clickgui extends Screen {
     @Override
     public void extractRenderState(GuiGraphicsExtractor context, int mouseX, int mouseY, float delta) {
         com.eclipseware.imnotcheatingyouare.client.clickgui.components.Item.context = context;
-        context.fill(0, 0, context.guiWidth(), context.guiHeight(), 0x55000000);
+        context.fill(0, 0, context.guiWidth(), context.guiWidth(),context.guiHeight() 0x880A0A0A);
         this.widgets.forEach(components -> components.drawScreen(context, mouseX, mouseY, delta));
         
         for (Widget widget : this.widgets) {
